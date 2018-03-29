@@ -1,0 +1,520 @@
+% Dewan MD Zahid
+%Final Project Using Latex
+%Fun with Math, Physics, Chemistry Equations and LaTex
+%ENG 473
+
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{refstyle}
+\usepackage{chngcntr}
+\counterwithout{figure}{section}
+\counterwithout{figure}{subsection}
+\counterwithin*{figure}{section}
+\usepackage[version=3]{mhchem}
+\parskip=0.1in
+\usepackage{chemfig}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{skmath}
+\usepackage{tikz}
+\usepackage{tabu} % insert table
+%\pagestyle{headings}
+\usepackage{fancyhdr}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{bookmark}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\newcommand\textlcsc[1]{\textsc{\MakeLowercase{#1}}} %all caps
+%	options include 12pt or 11pt or 10pt
+%	classes include article, report, book, letter, thesis
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Dewan M. Zahid}
+\fancyhead[RE,LO]{Fun with Math and \LaTeX}
+%\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+
+
+ 
+
+ 
+
+ 
+
+
+\pagebreak
+
+\begin{document}
+
+
+
+ \pagenumbering{gobble} 
+\title{
+\huge
+{Fun with Math and \LaTeX }
+\author{Mathematical Document using \LaTeX\ \\ Dewan MD Zahid}
+\date{\today}
+\linebreak
+\includegraphics{logo.png}
+\begin{figure} [b]
+\includegraphics[width=1.1\textwidth]{banner.png}
+\end{figure}
+}
+\maketitle
+
+
+\pagebreak
+
+%\pagenumbering{gobble}
+\pagenumbering{roman}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\setcounter{page}{1}
+\pagebreak
+
+\begin{center}
+\Huge{Publication and Copyright}\\
+\end{center}
+\vfill
+
+
+\begin{center}
+\noindent
+Dewan MD Zahid\\ 
+ENG-473 Desktop Publishing Final Project\\
+©2017 MSU Desktop Publishing Revised.\\
+\emph{Fun with Math and \LaTeX }
+Documentaion publication for MnSU ENG 473-Desktop Publishing Course Using \LaTeX
+under the supervision of Professor Roland Nord\\
+This document is showing the basic uses of \LaTeX  in Mathematics, Physics and Chemistry.\\
+All rights Revised from Minnesota State University, Mankato\\
+Spring 2017 Session.
+\end{center}
+\begin{figure} [b]
+\includegraphics[width=1.1\textwidth]{banner.png}
+\end{figure}
+\clearpage %force a page break
+
+
+
+
+
+
+
+
+
+
+
+\begin{abstract}
+
+\noindent
+As a Student of Desktop Publication, I learned the uses of different Desktop Publishing Software by now. As a matter of fact, I came up with all my knowledge and skill of different software to create a new document of my own style and design.\\
+
+
+\noindent
+During the whole Semester, I was introduced with different software and their magic tools. For example, I started learning DTP from MS word, Framemaker, Illustrator, InDesign, HTML and few more. Among all these I was trying to write something interesting on my passion math and Physics equations. Suddenly I figured out it’s not that easy I thought to write notations with these softwares I learned earlier. So, I started to learn something cool about Latex which is another markup language specially used for different languages, sign language, or mathematical notations.\\
+
+
+\noindent
+In Latex, I found something interesting that it’s not that hard to write any complex or simple functions if you have some basic knowledge of any markup language. As I earlier mentioned, I was introduced with multiple platform of software during the whole semester which made me feel strong to work with any software as I already grew up with the basic design and style skills and knowledge.\\
+
+
+\noindent
+In Latex, the document style is design is very handy and sometime sensitive too. To avoid error most of the time after writing any code I run my whole program to verify everything is working fine and there is no fatal errors. As long as I find any error I tried to fix those by reading source articles from different pages like MIT database, ShareLatex, wiki books and so on. \\
+
+\noindent
+Finally, I want to thank Dr Nord to give me a chance to know something very new and interesting. I really enjoyed a lot to write this paper using Latex. 
+
+
+
+\end{abstract}
+
+
+
+\pagebreak
+
+\addcontentsline{toc}{section}{Introduction}
+\section*{Introduction}
+\pagenumbering{arabic}
+In this project I will focus on writing Mathematical expressions using \LaTeX\ . For the entire project, I choose two different text books and I will derive most of my equations from these two books. The first book \emph{Essential Calculus Early Transcendentals Second Edition} by James Stewart and the second book \emph{Modern Physics Third Edition} by Kenneth S. Krane. Before going into deep, I will explain a little bit about \LaTeX\ and why it is important for Mathematical notation.
+	
+	\addcontentsline{toc}{subsection}{Why should we use \LaTeX\ }
+	\subsection*{Why should we use \LaTeX\  }
+	
+
+	 \LaTeX\ is a document preparation system, came from the word Lamport TeX. \LaTeX\ is usually pronounced as lah-tek or lay-tek. \LaTeX\ is a different kind of markup language by which writer uses markup tag to define a general structure of a document like any article, book, letter or even research paper. A TeX distribution like MikTeX for windows or macTex for mac can be used to produce an output file like pdf or DVI suitable for printing or digital distribution. Using this markup language it is very convenient to write a long mathematical fraction, function or equation in a short period of time.  For an example it is write this function in \LaTeX\  just like other programming language. 
+	
+	$$  V = \frac{4 \pi r^3}{3}  $$
+	\noindent
+\$\  sign used for the mathmatical notation.  Here, writing a big function is very easy if one can remember the writing method. Same equation would take some longer than usual time in Microsoft Word as we need to insert equations and fractions in Microsoft Word. In my entire paper, I will introduce more equations from my two different text books.
+	\noindent
+Besides \LaTeX\ is widely used for communication and publications of many scientific documents including in mathematics, statistics, computer science, physics, chemistry, engineering, philosophy, political science, quantitative psychology in academia. \LaTeX\ has also a very prominent role in the preparation and publication of articles, books that contains multilingual materials. 
+	
+\addcontentsline{toc}{section}{ \LaTeX\ in Mathematics}	
+\section*{ \LaTeX\ in Mathmatics}
+In this section, I will describe the importance of \LaTeX\ in mathematics and for this very reason I will demonstrate some of the chapters from \emph{Essential Calculus Early Transcendentals Second Edition} by James Stewart. I will explain some of the mathematical functions and equations and also explain why it's more convenient in \LaTeX\  to write those equations. 
+
+\noindent
+Before going into the depth, I will simply explain one of the simplest function. 
+for example, $   V = \frac{4 \pi r^3}{3}  $
+here, the symbol backward slash \ has been used to write the formula and frac used to define fractions and everything in the curly braces will be inside of the frac functions. 
+\addcontentsline{toc}{subsection}{ \LaTeX\ in Mathematical Functions and Limits}	
+	\subsection*{ \LaTeX\ in Mathematical Functions and Limits}
+	
+	In the following graph we can see, there are two different graphs of \emph{f} and \emph{g} and we can put couple of different equations to evaluate the graphs.  \\
+	\\
+	
+	\includegraphics{function}\\
+	\\
+	The identified equations are like:
+	
+		
+	
+		\noindent a) $\displaystyle{\lim_{x \to 2}[f(x) + g(x)}]$
+		b) $\displaystyle{\lim_{x \to 1}[f(x) + g(x)}]$
+		\\
+		c) $\displaystyle{\lim_{x \to 0}[f(x)  g(x)}]$      \space \space \space
+		\
+		d)$ \displaystyle\lim_{x \to -1} = \frac{f(x) }{g(x)}  $
+		\\
+		e)$   \displaystyle{\lim_{x \to 2}[x^3  f(x)}] $\space \space \indent \space \space
+		f) $\displaystyle{\lim_{x \to 1}\sqrt {3 + f(x)}}$
+		
+		\break
+		\noindent From the above examples it can be noted that, using \LaTeX\ for mathematical functions are more convenient.
+		
+		\noindent in the same way we can write integral notations.
+		$$\int_{a}^{b} x^2 dx$$
+		double dollar sign means the equation will be in center where single dollar sign will be as normal paragraph style.
+		
+	\addcontentsline{toc}{subsection}{Writing in two columns}	
+	\subsection*{Writing in two columns}
+	
+	\begin{multicols}{2}
+\noindent \textbf {HOW CAN A FUNCTION FAIL TO BE DIFFERENTIABLE?}
+
+\noindent\begin{minipage}{0.3\textwidth}  % adapt widths of minipages to needs
+%\caption{function}
+\includegraphics[width=\linewidth]{figure5a}
+\end{minipage}%
+\\ \linebreak
+
+	
+\noindent We saw that the function in $y = |x| $ in the above Example is not differentiable at 0 and the graph also shows that it changes direction abruptly when$x=0$ . In general, if the graph of a function has a “corner” or “kink” in it, then the graph of \emph{f} has no tangent at this point and \emph{f} is not differentiable there. [In trying to compute $f'(a)$, we find that the left and right limits are different.]
+
+\noindent 
+From Theorem 4 which gives another way for a function not to have a derivative. It says that if \emph{f} is not continuous at , then is not differentiable at \emph{a} . So at any discontinuity (for instance, a jump discontinuity) \emph{f} fails to be differentiable.\\
+A third possibility is that the curve has a \textbf {vertical tangent line} when $x= a$ ; that is, \emph{f} is continuous at \emph{a} and $$\displaystyle\lim_{x \to -1} {|f'(x)|}=\infty  $$\\
+This means that the tangent lines become steeper and steeper as $x \rightarrow a$ .
+ The above Figure shows one way that this can happen.
+ 
+\end{multicols}
+\pagebreak
+\addcontentsline{toc}{subsubsection}{Another Example of Multicolumn}	
+\subsubsection*{Another Example of Multicolumns}
+
+
+\begin{figure}[h]
+\includegraphics{figure7}
+\caption{Three wasys for \emph{f} not be a differentiable at \emph{a}}
+\label{2}
+\end{figure}
+
+\begin{multicols}{3}
+\noindent
+A graphing calculator or computer provides another way of looking at differentiability.
+If $(f)$ is differentiable at \emph{a}, then when we zoom in toward the point $(a, f(a))$ the graph straightens out and appears more and more like a line. But no matter how much we zoom in toward a point like the ones, we can’t eliminate the sharp point or corner.\\
+If $f$ is a differentiable function, then its derivative $f'$ is also a function, so ${f'}$ may have a derivative of its own, denoted by $(f') = f"$. This new function $f'$ is called the \textbf{\textit{second derivative}} of $f$ because it is the derivative of the derivative of $f$ . Using Leibniz notation, we write the second derivative $y = f(x) $of as $$\frac{d}{dx} (\frac{dy}{dx})=\frac{d^2y}{dx^2}$$
+ 
+\end{multicols}
+\noindent
+These are the basic examples of writing mathematical notations. Moreover, if the power of $x$ is more than 3 then we must write it in a different way. For example:
+$$ f(x) = x^32 $$ here I was trying to write the power of $x$ is 34 and when I used the regular method it becomes $x$ power of 3 i.e. $x$ cube and multiply $2$. But I was trying to power the value of $x$ to the multiple of $32$. So, we have to remember that if the power of any $exponent$ is more than $9$ or simple more than $one$ digit, we have to follow another rule.
+\[f(x) = x^{32}\]
+Same method we need to follow for \emph{superscripts}, For Example: 
+\[ (x^n)^{32} = x^{n_r+n_s}  \]
+
+
+\addcontentsline{toc}{subsection}{ Laws of Logarithm }	
+\subsection*{Laws of Logarithm }
+
+There are a number of rules known as the \textbf{laws of logarithms}. These allow expressions involving \emph {logarithms} to be rewritten in a variety of different ways. The laws apply to \emph{logarithms}  of any base but the same base must be used throughout a calculation.
+
+\addcontentsline{toc}{subsection}{ Explanation of Laws of Logarithm }	
+\subsubsection*{Explanation of Laws of Logarithm}
+The three main laws are stated here:
+
+ 
+\begin{itemize}
+  \item First Law or Laws of Addition
+  \item Second Law or Laws of Subtraction
+  \item Third Law or Laws of Multiplication
+\end{itemize}
+
+\addcontentsline{toc}{subsubsection}{First Law or Laws of Addition}	
+\subsubsection*{First Law or Laws of Addition}
+\begin{tcolorbox}
+\center
+\log A + \log B = \log AB\\
+
+\end{tcolorbox}
+\noindent
+This law tells us how to add two logarithms together. Adding log A and log B results in the logarithm of the product of A and B, that is log AB. The same base, in this case e, is used throughout the calculation. You should verify this by evaluating
+both sides separately on your calculator.
+
+\addcontentsline{toc}{subsubsection}{Second Law or Laws of Subtraction}	
+\subsubsection*{Second Law or Laws of Subtraction}
+\begin{tcolorbox}
+\center
+$$\log A - \log B = log\frac {A }{B}$$
+\end{tcolorbox}
+\noindent
+So, subtracting one log from other log will be in division notation. Besides, there is no need that either base 10 or base e be used, but since those are the two you have on your calculator, those are probably the two that you're going to use the most. I prefer the natural log (ln is only 2 letters while log is 3, plus there's the extra benefit that I know about from calculus). The base that you use doesn't matter, only that you use the same base for both the numerator and the denominator.
+
+\addcontentsline{toc}{subsubsection}{Third Law or Laws of Multiplication}	
+\subsubsection*{Third Law or Laws of Multiplication}
+\begin{tcolorbox}
+\center
+$$\log x^y = y \log x$$
+\end{tcolorbox}
+\noindent
+Some of the statements above are very melodious. That is, they sound good. It may help you to memorize the melodic mathematics, rather than the formula.
+$$\log 8^7 = 7 \log 8$$
+
+\textbf {Melodic Mathematics}
+\begin{itemize}
+\item The log of a product is the sum of the logs
+\item The sum of the logs is the log of the products
+\item The log of a quotient is the difference of the logs
+\item The difference of the logs is the log of the quotient
+\item The exponent on the argument is the coefficient of the log
+\item The coefficient of the log is the exponent on the argument
+\end{itemize}
+\pagebreak
+
+
+\addcontentsline{toc}{section}{ \LaTeX\ in Physics}	
+\section*{\LaTeX\ in Physics} 
+The search for the basic building blocks of nature has occupied the thoughts of
+scientific investigators since the Greeks introduced the idea of atomism 2500 years
+ago. As we look carefully at complex structures, we find underlying symmetries
+and regularities, that help us to understand the laws that determine how they
+are put together. The regularities of crystal structure, for example, suggest to us
+that the atoms of which the crystal is composed must follow certain rules for
+arranging themselves and joining together. As we look more deeply, we find that
+although nature has constructed all material objects out of roughly 100 different
+kinds of atoms, we can understand these atoms in terms of only three particles:
+the electron, proton, and neutron. Our attempts to look further within the electron
+have been unsuccessful—the electron seems to be a fundamental particle, with
+no internal structure. However, when nucleons collide at high energy, the result
+is more complexity rather than simplicity; hundreds of new particles can emerge
+as products of these reactions. If there are hundreds of basic building blocks, it
+seems unlikely that we could ever uncover any fundamental dynamic laws of their
+behavior. However, experiments show a new, underlying regularity that can be
+explained in terms of a small number of truly fundamental particles called \emph {quarks}.
+In this chapter, we examine the properties of many of the particles of physics, the
+laws that govern their behavior, and the classifications of these particles. We also
+show how the quark model helps us to understand some properties of the particles.
+
+\begin{table}
+\begin{tcolorbox}
+
+\center
+\huge
+\textlcsc{Physics Reference Table}\\
+\end{tcolorbox}
+\noindent
+\begin{tabu} to 1.0\textwidth { | X[l] | X[c] | X[r] | }
+ \hline
+ \textbf{Physical Constant} & \textbf{Symbol} & \textbf{Value} \\
+ \hline
+ Acceleration due to gravity on
+Earth  & $g$  & $9.8 ms^{-2}$  \\ 
+ \hline
+ Coulomb’s law constant   & $k$  & $9.0 $ x $10^9 $ $\frac{Nm^2}{C^2}$  \\
+  \hline
+ Elementary charge   & $e$  & $1.6$x$10^{-19}$  C\\
+  \hline
+ Electron rest mass   & $m_e$  & $9.11$ x $10^{-31}kg$   \\
+  \hline
+ Gravitational constant   & $G$  & i$6.67$x$10^{-11}\frac{Nm^2}{kg^2}$  \\
+  \hline
+ Proton rest mass   & $m_p$  & $1.67$x$10^{-27}kg$  \\
+  \hline
+ Speed of light in a vacuum  & $c$  & $3.0$x$10^8 ms^{-1}$  \\
+  \hline
+ Speed of sound in air at STP  &   & $331 ms^{-1}$  \\
+  \hline
+
+\end{tabu}
+\caption{\label{tab:table-name}Physics Reference Table}
+\end{table}
+
+
+\break
+
+
+
+
+\addcontentsline{toc}{subsection}{ THE FOUR BASIC FORCES}	
+\subsection*{THE FOUR BASIC FORCES} 
+All the known forces in the universe can be grouped into four basic types.
+In order of increasing strength, these are: \emph {gravitation, the weak interaction,
+electromagnetism, and the strong interaction}.
+
+\addcontentsline{toc}{subsubsection}{ The Gravitational Interaction}	
+\subsubsection*{The Gravitational Interaction}  
+Gravity is of course exceedingly important in our daily lives, but on the scale of fundamental interactions between particles
+in the subatomic realm, it is of no importance at all. To give a relative figure,
+the gravitational force between two protons just touching at their surfaces is
+about $10^{-38}$ of the strong force between them. The principal difference betweengravitation and the other interactions is that, on the practical scale, gravity is cumulative and infinite in range. 
+
+\begin{figure}
+\includegraphics[width=.9\textwidth]{gravitation}
+\caption{Basic Interaction of \emph{Forces}}
+\end{figure}
+\noindent
+Tiny gravitational interactions, such as the force
+exerted by one atom of the Earth on one atom of your body, combine to produce
+observable effects. The other forces, while much stronger than gravity at the
+microscopic level, do not affect objects on the large scale, either because they
+have a short range (the strong and weak forces) or their effect is negated by
+shielding (electromagnetism).
+
+\addcontentsline{toc}{subsection}{ The Weak Interaction }	
+\subsubsection*{The Weak Interaction}  The weak interaction is responsible for nuclear beta
+decay (see Section 12.8) and other similar decay processes involving fundamental
+particles. It does not play a major role in the binding of nuclei. The weak force
+between two neighboring protons is about $10^{-7}$ of the strong force between them,
+and the range of the weak force is on the scale of $0.001$ fm. Nevertheless, the
+weak force is important in understanding the behavior of fundamental particles,
+and it is critical in understanding the evolution of the universe.
+
+\addcontentsline{toc}{subsection}{The Electromagnetic Interaction}	
+\subsubsection*{The Electromagnetic Interaction }  Electromagnetism is important in the
+structure and the interactions of the fundamental particles. For example, some
+particles interact or decay primarily through this mechanism. Electromagnetic
+forces are of infinite range, but the shielding effect generally diminishes their
+effect for ordinary objects. Many common macroscopic forces (such as friction,
+air resistance, drag, and tension) are ultimately due to electromagnetic forces at the
+atomic level. 
+
+\begin{figure}
+\centering
+\includegraphics[width=.9\textwidth]{electromagnetic}
+\caption{\scriptsize An aurora is caused by interactions between charged particles in solar winds and atoms in the Earth's ionosphere, and shaped by the Earth's magnetic field. It produces its own magnetic fluctuations and electrical currents. (Image courtesy of the U.S. Air Force.)}
+\end{figure}
+
+\noindent
+Within the atom, electromagnetic forces dominate. The electromagnetic
+force between neighboring protons in a nucleus is about $10^{-2}$ of the strong
+force, but within the nucleus the electromagnetic forces can act cumulatively
+because there is no shielding. As a result, the electromagnetic force can compete
+with the strong force in determining the stability and the structure of nuclei.
+
+\addcontentsline{toc}{subsubsection}{The Strong Force }	
+\subsubsection*{The Strong Force }  The strong force, which is responsible for the binding of
+nuclei, is the dominant one in the reactions and decays of most of the fundamental
+particles. However, as we shall see, some particles (such as the electron) do not
+feel this force at all. It has a relatively short range, on the order of 1 fm.
+The relative strength of a force determines the time scale over which it acts. If
+we bring two particles close enough together for any of these forces to act, then
+a longer time is required for the weak force to cause a decay or reaction than for
+the strong force. As we shall see, the mean lifetime of a decay process is often
+a signal of the type of interaction responsible for the process, with strong forces
+being at the shortest end of the time scale (often down to $10^{-23}$ s). After
+summarizing the four forces and some of their properties.
+Particles can interact with one another in decays and
+\pagebreak
+
+\addcontentsline{toc}{section}{\LaTeX\  in Chemistry}
+\section*{\LaTeX\  in Chemistry}
+Chemistry is the study of matter, its properties, how and why substances combine or separate to form other substances, and how substances interact with energy. Many people think of chemists as being white-coated scientists mixing strange liquids in a laboratory, but the truth is we are all chemists. \\
+\noindent
+Doctors, nurses and veterinarians must study chemistry, but understanding basic chemistry concepts is important for almost every profession. Chemistry is part of everything in our lives. \\
+\noindent
+Every material in existence is made up of matter — even our own bodies. Chemistry is involved in everything we do, from growing and cooking food to cleaning our homes and bodies to launching a space shuttle. Chemistry is one of the physical sciences that help us to describe and explain our world.
+
+\addcontentsline{toc}{subsection}{ Fun with \LaTeX\ }	
+\subsection*{Fun with \LaTeX\ }
+Let's try to write few formulae of different compunts in Chemistry.
+
+\ce{PO4^3-}
+
+
+
+\ce{C2H3O2^-}
+
+
+\ce{^{227}_{90}Th+}
+
+\ce{O\bond{=}C\bond{=}O\bond{#}N}
+
+
+
+\ce{H2 + SO4 -> H2SO4}
+
+\ce{SO4^2- + Ba^2+ -> BaSO4 v}
+
+\noindent
+From the above example it can be noted that, \LaTeX can also be used to write Chmeical equations, formulae, even bonds. For me, I just started to love using \LaTeX after writing these chemical compunds.
+
+\addcontentsline{toc}{subsection}{Molecular Structure of Chemistry in \LaTeX\ }
+\subsection*{Molecular Structure of Chemistry in \LaTeX\ }
+
+Bond angles also contribute to the shape of a molecule. Bond angles are the angles between adjacent lines representing bonds. The bond angle can help differentiate between linear, trigonal planar, tetrahedral, trigonal-bipyramidal, and octahedral. The ideal bond angles are the angles that demonstrate the maximum angle where it would minimize repulsion, thus verifying the VSEPR theory.
+\vspace{.7cm}
+
+
+
+
+
+
+\chemfig{H-C(-[2]H)(-[6]H)-C(=[1]O)-[7]H}
+\break
+
+\noindent
+Essentially, bond angles is telling us that electrons don't like to be near each other. Electrons are negative. Two negatives don't attract. Let's create an analogy. Generally, a negative person is seen as bad or mean and you don't want to talk to a negative person. One negative person is bad enough, but if you have two put together...that's just horrible. The two negative people will be mean towards each other and they won't like each other. So, they will be far away from each other. We can apply this idea to electrons. 
+
+{\huge 
+    \setbondstyle{red,line width=2pt,dash pattern=on 2pt off 2pt}
+    \setatomsep{2em}
+    \chemname
+    {\chemfig{H-C(-[2]H)(-[6]H)-C(=[1]O)-[7]H}}
+    {Ethanal}
+}
+\\
+\space
+\linebreak
+
+\noindent
+Electrons are alike in charge and will repel each other. The farthest way they can get away from each other is through angles. Now, let's refer back to tetrahedrals. Why is it that 90 degrees does not work? Well, if we draw out a tetrahedral on a 2-D plane, then we get 90 degrees. However, we live in a 3-D world. To visualize this, think about movies. Movies in 3D pop out at us. Before, we see movies that are just on the screen and that's good. What's better? 3D or 2D? For bond angles, 3D is better. Therefore, tetrahedrals have a bond angle of 109.5 degrees. How scientists got that number was through experiments, but we don't need to know too much detail because that is not described in the textbook or lecture. 
+
+
+\pagebreak
+
+\addcontentsline{toc}{section}{Conclusion}
+\section*{Conclusion}
+
+Fianlly It feels like I did it! When I first started to work with \LaTeX literally I had no clue. During my entire Spring Semester, I worked with different publishing and editing software and among them I believe I liked \LaTeX most. \LaTeX is easier than InDesign, Framemaker to me. Besides, I also like writing in HTML, XML, XSL and so on. 
+When I started editing documents in word it was easy to edit any plain text like to edit a novel or any publications without special characters. But when it came to me to write a paper using all the mathematical functions it was hard to write them in any of the software I previously used where \LaTeX is very useful to write any mathematical functions more easily.
+In my entire paper, I wrote \LaTeX with three different major subjects. First, I started with Mathematics like Calculus, functions, limits and so on. Secondly, I wrote some tables and equations using Physics table and finally I wrote some basic and extended Chemistry formulae. Even in Chemistry it's easy to write geometrical structure too.
+
+\noindent
+Finally, I would definitely recommend everyone to use \LaTeX specially for special characters or equations.
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
